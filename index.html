@@ -8,8 +8,8 @@
         color: #fff;
         cursor: pointer;
         display: inline-block;
-        font-family: system-ui, -apple-system, system-ui, 'Segoe UI', Roboto, Ubuntu,
-          'Helvetica Neue', sans-serif;
+        font-family: system-ui, -apple-system, system-ui, 'Segoe UI', Roboto,
+          Ubuntu, 'Helvetica Neue', sans-serif;
         font-size: 18px;
         font-weight: 600;
         outline: 0;
@@ -38,8 +38,8 @@
       }
 
       .button-71:hover {
-        box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset, rgba(0, 0, 0, 0.1) 0 3px 5px,
-          rgba(0, 0, 0, 0.1) 0 10px 13px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+          rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
         transform: scale(1.05);
       }
 
@@ -54,7 +54,13 @@
     <table style="border: 1px solid black; border-collapse: collapse">
       <tbody>
         <tr style="border: 1px solid black">
-          <td style="max-width: 20rem; vertical-align: top; padding: 10px 30px 0px 10px">
+          <td
+            style="
+              max-width: 20rem;
+              vertical-align: middle;
+              padding: 10px 30px 0px 10px;
+            "
+          >
             1. Fill in your personal details:
           </td>
           <td style="padding-top: 10px">
@@ -89,7 +95,11 @@
                     <label>Email</label>
                   </td>
                   <td>
-                    <input type="text" id="inputEmail" style="width: 25%" /><span
+                    <input
+                      type="text"
+                      id="inputEmail"
+                      style="width: 25%"
+                    /><span
                       style="
                         font-family: 'Courier New', Courier, monospace;
                         margin-left: 2px;
@@ -105,9 +115,16 @@
               </tbody>
             </table>
             <tr>
-              <td style="padding: 10px 0px 10px 0px">2. Update the signature:</td>
+              <td style="vertical-align: middle; padding: 10px 0px 10px 10px">
+                2. Update the signature:
+              </td>
               <td style="padding: 10px 0px 10px 0px">
-                <button class="button-71" role="button" onclick="updateSignature()">
+                <button
+                  class="button-71"
+                  role="button"
+                  onclick="updateSignature()"
+                  style="width: 100%"
+                >
                   Update Signature ⇩
                 </button>
               </td>
@@ -115,26 +132,46 @@
           </td>
         </tr>
         <tr style="border: 1px solid black">
-          <td style="max-width: 20rem; vertical-align: top; padding: 20px 30px 0px 10px">
+          <td
+            style="
+              max-width: 20rem;
+              vertical-align: middle;
+              padding: 20px 30px 0px 10px;
+            "
+          >
             3. Review the results:
           </td>
-          <td style="border: 1px solid black; padding: 20px 20px 20px 20px">
+          <td style="border-left: 1px dashed black; padding: 20px 20px 20px 20px">
             <table style="border-top: solid #34d601 1px" id="signatureTable">
               <tbody>
                 <tr>
-                  <td style="vertical-align: top; padding-top: 10px; padding-right: 10px">
+                  <td
+                    style="
+                      vertical-align: top;
+                      padding-top: 10px;
+                      padding-right: 10px;
+                    "
+                  >
                     <img
                       src="data:image/png;base64,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"
                     />
                   </td>
                   <td style="padding-top: 20px">
                     <div
-                      style="font-family: Arial, Helvetica, sans-serif; font-size: x-large"
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: x-large;
+                      "
                       id="theName"
                     >
                       Greg Fenton
                     </div>
-                    <div style="font-family: Arial, Helvetica, sans-serif; font-size: large">
+                    <div
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: large;
+                      "
+                    >
                       <span id="theJobTitle">CTO</span> | Korr
                     </div>
                     <div style="height: 8px"></div>
@@ -147,7 +184,7 @@
                           /* text-decoration: none; */
                         "
                         href="tel:+1-416-315-4568"
-                        id="thePhone"
+                        id="thePhoneHref"
                         >+1-416-315-4568</a
                       >
                     </div>
@@ -183,32 +220,37 @@
           </td>
         </tr>
         <tr style="border: 1px solid black">
-          <td style="max-width: 20rem; padding: 10px 30px 10px 10px">
+          <td
+            style="
+              max-width: 20rem;
+              vertical-align: middle;
+              padding: 10px 30px 10px 10px;
+            "
+          >
             4. Copy the signature to your clipboard:
           </td>
           <td>
-            <table style="width: 100%">
-              <tbody>
-                <tr>
-                  <td>
-                    <button
-                      class="button-71"
-                      role="button"
-                      id="copyToClipboardButton"
-                      style="width: 100%"
-                    >
-                      Copy to Clipboard 📋
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <button
+              class="button-71"
+              role="button"
+              id="copyToClipboardButton"
+              style="width: 100%"
+            >
+              Copy to Clipboard 📋
+            </button>
           </td>
         </tr>
         <tr style="border: 1px solid black">
-          <td style="max-width: 20rem; padding: 10px 30px 10px 10px" colspan="2">
-            5. Go to Outlook ⇨ Settings ⇨ "email signature" ⇨ paste your clipboard value into a new
-            or existing signature
+          <td
+            style="
+              max-width: 20rem;
+              vertical-align: middle;
+              padding: 10px 30px 10px 10px;
+            "
+            colspan="2"
+          >
+            5. Go to Outlook ⇨ Settings ⇨ "email signature" ⇨ paste your
+            clipboard value into a new or existing signature
           </td>
           <td></td>
         </tr>
@@ -230,15 +272,20 @@
 
         document.getElementById('theName').innerText = valName;
         document.getElementById('theJobTitle').innerText = valJobTitle;
-        document.getElementById('thePhone').innerText = valPhone;
-        document.getElementById('theEmailHref').href = `mailto:${valEmail}@korr.co`;
-        document.getElementById('theEmailHref').innerText = `${valEmail}@korr.co`;
+        document.getElementById('thePhoneHref').href = `tel:${valPhone}`;
+        document.getElementById('thePhoneHref').innerText = valPhone;
+        document.getElementById(
+          'theEmailHref'
+        ).href = `mailto:${valEmail}@korr.co`;
+        document.getElementById(
+          'theEmailHref'
+        ).innerText = `${valEmail}@korr.co`;
       };
 
       let loadForm = () => {
         let valName = document.getElementById('theName').innerText;
         let valJobTitle = document.getElementById('theJobTitle').innerText;
-        let valPhone = document.getElementById('thePhone').innerText;
+        let valPhone = document.getElementById('thePhoneHref').innerText;
         let valEmail = document.getElementById('theEmailHref').innerText;
         valEmail = valEmail.split('@')[0];
 
@@ -274,4 +321,3 @@
     </script>
   </body>
 </html>
-
